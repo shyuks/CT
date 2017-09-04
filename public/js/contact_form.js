@@ -13,7 +13,7 @@ $(document).ready(function() {
             message: message
         }
         $.ajax({
-            url: "http://www.Cataractpedia.com/sendContactForm",
+            url: "http://www.cataractspedia.com/sendContactForm",
             type: "POST",
             dataType: "json",
             data: { payload },

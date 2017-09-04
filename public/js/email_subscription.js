@@ -6,7 +6,7 @@ $(document).ready(function() {
         var payload = $email;
 
         $.ajax({
-            url: "http://www.Cataractpedia.com/sendSubscription",
+            url: "http://www.cataractspedia.com/sendSubscription",
             type: "POST",
             dataType: "json",
             data: { payload },
@@ -29,7 +29,7 @@ $(document).ready(function() {
         var payload = $email;
 
         $.ajax({
-            url: "http://www.Cataractpedia.com/sendSubscription",
+            url: "http://www.cataractspedia.com/sendSubscription",
             type: "POST",
             dataType: "json",
             data: { payload },

@@ -59,26 +59,30 @@ app.post('/sendContactForm', function(req, res) {
 // });
 
 app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/blank.html'));
+});
+
+app.get('/demo', function(req, res) {
     res.sendFile(path.join(__dirname, './public/Index_A.html'));
 });
 
-app.get('/A', function(req, res) {
+app.get('/demoA', function(req, res) {
     res.sendFile(path.join(__dirname, './public/Index_A.html'));
 });
 
-app.get('/B', function(req, res) {
+app.get('/demoB', function(req, res) {
     res.sendFile(path.join(__dirname, './public/Index_B.html'));
 });
 
-app.get('/C', function(req, res) {
+app.get('/demoC', function(req, res) {
     res.sendFile(path.join(__dirname, './public/Index_C.html'));
 });
 
-app.get('/D', function(req, res) {
+app.get('/demoD', function(req, res) {
     res.sendFile(path.join(__dirname, './public/Index_D.html'));
 });
 
-app.get('/E', function(req, res) {
+app.get('/demoE', function(req, res) {
     res.sendFile(path.join(__dirname, './public/Index_E.html'));
 });
 
@@ -176,13 +180,10 @@ app.use(function(req, res) {
 
 
 app.listen(3000, function() {
-    console.log('Listening On http://138.68.248.193:8080/');
+    console.log('Listening On http://localhost:3000/');
 });
 
-// app.listen(8080, '138.68.248.193', function() {
-//     console.log('Listening On http://138.68.248.193:8080/');
+// app.listen(8080, '192.241.208.86', function() {
+//     console.log('Listening On http://192.241.208.86:8080/');
 // });
 
-// app.listen(8080, '138.68.248.193', function() {
-//     console.log('Listening On http://138.68.248.193:8080/');
-// });
